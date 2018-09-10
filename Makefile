@@ -82,7 +82,7 @@ rebar-cover:
 	@rebar3 cover
 
 coveralls:
-	@rebar3 coveralls send
+	DEBUG=1 rebar3 coveralls send
 
 cuttlefish: deps
 	@mv ./deps/cuttlefish/cuttlefish ./cuttlefish
